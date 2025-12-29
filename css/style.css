@@ -59,6 +59,12 @@ footer {
   padding: 20px 0;
 }
 
+.footer_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -76,4 +82,34 @@ ul.menu{
 }
 .logo img{
   width: 60px;
+}
+
+div.container {
+  display: flex;
+  gap: 20px;
+}
+
+div.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.card img {
+  width: 150px;
+  height: auto;
+}
+
+.card button {
+  margin-top: 10px;
+}
+
+.card a{
+  width: 50px;
+  height: auto;
+
 }
