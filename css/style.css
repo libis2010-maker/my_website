@@ -113,3 +113,31 @@ div.card {
   height: auto;
 
 }
+
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+.service-card {
+  width: 31%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.service-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
