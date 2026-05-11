@@ -141,3 +141,35 @@ div.card {
   width: 50px;
   margin-bottom: 10px;
 }
+
+div.contant{
+  display: flex;
+  flex-direction: column;
+
+}
+
+div.name{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+form {
+    background-color: #ffffff;
+    padding: 60px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    font-size: 14px;
+}

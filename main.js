@@ -38,4 +38,50 @@ function addline(){
  }
      
 
+const form = document.querySelector("#submitBtn");
 
+form.addEventListener("click", function(e) {
+    e.preventDefault(); 
+    const username = document.querySelector("#username").value;
+    const email = document.querySelector("#email").value;
+    const phonenumber=document.querySelector("#phonenumber").value;
+    const firstname = document.querySelector("#firstname").value;
+    const lastname = document.querySelector("#lastname").value;
+    const Massege = document.querySelector("#Massege").value;
+
+    console.log(username)
+    console.log(email)
+    console.log(phonenumber)
+    console.log(firstname)
+    console.log(lastname)
+    console.log(Massege)
+
+    if (firstname.length<2) {
+        alert("שם ראשון חייב להיות לפחות 2 תווים");
+         return;
+    }
+    if (lastname.length<2) {
+        alert("שם שני חייב להיות לפחות 2 תווים");
+         return;
+    }
+    if (username.length<5) {
+        alert("שם משתמש חייב להיות לפחות 5 תווים");
+         return;
+    }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert("כתובת אימייל לא חוקית");
+         return;
+   
+    }
+    if (phonenumber.length<10 && phone>10) {
+        alert("הטלפון חייב להיות עם 10 מספרים");
+         return;
+    }
+    if (Massege.length<10) {
+        alert("ההודעה חייבת להיות לפחות 10 תווים");
+         return;
+    }
+
+    
+})
