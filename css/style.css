@@ -11,16 +11,38 @@ body {
 }
 
 .container {
+  text-align: right;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.container2 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container3 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 
 /* Header */
 header {
   background: #eeaaaa;
   color: #000000;
   padding: 20px 0;
+}
+
+p{
+  
+  line-height: 1.8;    
+  font-size: 1.1rem;   
+  color: #3f3f3f;         
+  margin-bottom: 20px; 
 }
 
 header h1 {
@@ -74,19 +96,29 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 ul.menu{
   display: flex;
+  gap: 20px;
 }
-.logo img{
-  width: 60px;
-}
+
+
 
 div.container {
   display: flex;
   gap: 20px;
+  flex-direction: column;
+}
+
+div.container2 {
+  display: flex;
+  gap: 20px;
+}
+
+div.container3 {
+  display: flex;
+  gap: 30px;
 }
 
 div.card {
@@ -98,6 +130,12 @@ div.card {
   align-items: center;
 }
 
+div.social-icons{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 100px;
+}
 
 .card img {
   width: 150px;

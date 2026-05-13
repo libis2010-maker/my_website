@@ -74,7 +74,7 @@ form.addEventListener("click", function(e) {
          return;
    
     }
-    if (phonenumber.length<10 && phone>10) {
+    if (phonenumber.length<10 && phonenumber>10) {
         alert("הטלפון חייב להיות עם 10 מספרים");
          return;
     }
@@ -82,6 +82,18 @@ form.addEventListener("click", function(e) {
         alert("ההודעה חייבת להיות לפחות 10 תווים");
          return;
     }
-
+    alert("הטופס נשלח בהצלחה")
+    /*
+    fetch("http://localhost:3000/post", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ email: email, phonenumber: phonenumber,firstname: firstname,lastname: lastname, Massege: Massege })
+    })
+    .then(res => res.text())
+    .then(data => alert(data))
+    .catch(err => console.error(err));
+    */
     
 })
